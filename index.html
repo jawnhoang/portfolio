@@ -1,85 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/main.css">
-  <title>My Coding Journey</title>
-</head>
-<!-- Navigation -->
-<nav class="HoangNav">
-  <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
-  <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
-  <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
-</nav>
- <!--End Navigation -->
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "css/index.css">
+        <link rel="stylesheet" href = "css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+<!--Nav Bar Begin-->
+<div class="topNav" id = "myTopNav">
+    <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
+    <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
+    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+<!--Nav Bar End-->
 <body>
-  <!--row one-->
-  <div class="pfpCard">
+    <!--row one-->
+    <div class="row">
+        <div class="side">
+            <div class="Headcard">
+                <img src="images/pfp/JHheadshot.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>John Hoang</b></h4>
+                  <p>Software Engineering Undergrad</p>
+                </div>
+              </div>
+        </div>
+        <div class = "main">
+            <h2 class = "profHead">About Me</h2>
+                <p>I am currently an SJSU undergrad pursuing my B.S. in Software Engineering</p>
+                <p>I'm expected to graduate in Spring 2022 and I am very excited to see what oppourtunities life has for me after!</p>
+                <h3 class = "profHead">My Hobbies</h3>
+                <p>I like to spend my free time doing: </p>
+                <li>Working Out</li>
+                <li>Listening to EDM, Jazz, LoFi HipHop, Rap</li>
+                <li>Playing video games with my friends</li>
+                <h4 class = "profHead">My Goals for 2021</h4>
+                <li>Learn about new technologies and frameworks</li>
+                <li>Improve data structures and algorithm strengths</li>
+        </div>
+      </div>
+      <!--row one end-->
 
-  <img class = "myPfp" src="images/pfp/JHheadshot.jpg" style="max-width: 100%;">
-  <div class = "container">
-   <center>
-  <h1>John Hoang</h1>
-  </center>
-  </div>
+      <!--row two-->
+    <div class = "row">
+        <div class="qualificationCard">
+
+            <div class = "container">
+             <center>
+            <h5>Academic Journey In A Nutshell</h5>
+            </center>
+            <p class = "para">During my childhood I spent most my time playing with LEGO. This became the foundation of my interests in computer science and software engineering.</b>
+                I've been looking at code as tiny LEGO bricks that fit together and forms something bigger. Coding to me is basically playing with an endless supply of digital building blocks.
+            </p>
+            <p class = "para">At SJSU, I primarily learned Java, with Python as my secondary language. I am always trying to improve my programming skills through various 
+              websites like LeetCode and HackerRank. I'm always open towards feedback and constructed criticism when it comes to code. The community is vast 
+              and offers more than I can ever expect.
+            </p>
+            <p class = "para">
+              <br>
+              Relevant courses I've taken at SJSU are:
+              <li class = "para">Data Structures and Algorithms</li>
+              <li class = "para">Software Engineering</li>
+              <li class = "para">Object-Oriented Design</li>
+            <br>
+              <p class = "para">I am currently in the process of completing:</p> 
+              <li class = "para" >Operating Systems</li>
+              <li class = "para">Computer Networks</li>
+              <li class = "para">Database Management Systems</li>
+            </p>
+            <p><a href="deliverables\resume\JohnHoangResume (5).pdf" alt="pdf" download = "JohnHoangResume.pdf">
+              Click here to download my resume!
+            </a></p>
+             
+            </div>
+    </div>
+
+    <!--row two end-->
+
+
 
 </div>
 
-<div class = "textCard" style="width: 300px;">
-  <h2 class = "profHead">About Me</h2>
-  <p>I am currently an SJSU undergrad pursuing my B.S. in Software Engineering</p>
-  <p>I'm expected to graduate in Spring 2022 and I am very excited to see what oppourtunities life has for me after!</p>
-  <h3 class = "profHead">My Hobbies</h3>
-  <p>I like to spend my free time doing: </p>
-  <li>Working Out</li>
-  <li>Listening to EDM, Jazz, LoFi HipHop, Rap</li>
-  <li>Playing video games with my friends</li>
-  <h4 class = "profHead">My Goals for 2021</h4>
-  <li>Learn about new technologies and frameworks</li>
-  <li>Improve data structures and algorithm strengths</li>
-  
-  </div>
-
-<!--row two -->
-<div class="qualificationCard">
-
-  <div class = "container">
-   <center>
-  <h5>Academic Journey In A Nutshell</h5>
-  </center>
-  <p class = "para">During my childhood I spent most my time playing with LEGO. This became the foundation of my interests in computer science and software engineering.</b>
-      I've been looking at code as tiny LEGO bricks that fit together and forms something bigger. Coding to me is basically playing with an endless supply of digital building blocks.
-  </p>
-  <p class = "para">At SJSU, I primarily learned Java, with Python as my secondary language. I am always trying to improve my programming skills through various 
-    websites like LeetCode and HackerRank. I'm always open towards feedback and constructed criticism when it comes to code. The community is vast 
-    and offers more than I can ever expect.
-  </p>
-  <p class = "para">
-    <br>
-    Relevant courses I've taken at SJSU are:
-    <li class = "para">Data Structures and Algorithms</li>
-    <li class = "para">Software Engineering</li>
-    <li class = "para">Object-Oriented Design</li>
-  <br>
-    <p class = "para">I am currently in the process of completing:</p> 
-    <li class = "para" >Operating Systems</li>
-    <li class = "para">Computer Networks</li>
-    <li class = "para">Database Management Systems</li>
-  </p>
-  <p><a href="deliverables/resume/HoangResume2021 (2).pdf" alt="pdf" download = "JohnHoangResume.pdf">
-    Click here to download my resume!
-  </a></p>
-   
-  </div>
-
-</div>
 
 
-  
-  
+
 
 </body>
+
 </html>
 <script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

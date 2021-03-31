@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/jina.css">
-  <title>My Coding Journey</title>
-</head>
-<!-- Navigation -->
-<nav class="HoangNav">
-  <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
-  <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
-  <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
-</nav>
- <!--End Navigation -->
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "css/archer.css">
+        <link rel="stylesheet" href = "css/nav.css">
+        <link rel="stylesheet" href = "css/jina.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+<!--Nav Bar Begin-->
+<div class="topNav" id = "myTopNav">
+    <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
+    <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
+    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+<!--Nav Bar End-->
+
 
 
  <body>
@@ -76,6 +84,40 @@
     <span class="dot" onclick="currentSlide(5)"></span>
     <span class="dot" onclick="currentSlide(6)"></span>
   </div>
+
+  <div class="row">
+    <div class="column">
+        <br>
+    </div>
+    <div class="column">
+  <div class= "SummaryCard">
+    <div class = "container">
+      <center>
+        <h2>Project Summary</h2>
+      </center>
+      <p class = "para"> JINA was a 4 person collaboration for my Object Oriented Class. We decided to test our skills and create 
+          a video game platform. Each person was responsible for a game and some extra features. 
+      </p>
+      <p class = "para"> In order for all of us to achieve this project's goal, everyone utilized libraries, youtube tutorials, and the internet
+          to their disposal in creating the games' foundation. It then became our liberty to tweak the games with our added features
+          and whatever else we were able to squeeze in.
+      </p>
+      <p class = "para"> This project taught me the basics of:
+          <li class = "bullet">JavaFX and how to use SceneBuilder</li>
+          <li class = "bullet">Basics of Object Oriented Designs, how to create proper classes</li>
+          <li class = "bullet">Exposure to Agile and Scrum methodologies</li>
+      </p>
+      <p>Here is the Demo I made with my teammates!</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jwc3Drcu_3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+  
+    </div>
+  </div>
+  </div>
+  </div>
+
 
   <center>
     <h1>Deliverables</h1>

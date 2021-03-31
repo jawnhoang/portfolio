@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/main.css">
-  <title>My Coding Journey</title>
-</head>
- <!-- Navigation -->
- <nav class="HoangNav">
-    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "css/nav.css">
+        <link rel="stylesheet" href = "css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+<!--Nav Bar Begin-->
+<div class="topNav" id = "myTopNav">
+    <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
     <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
-    <a href="#home" onclick = "home();" class="HoangNavItem">About Me</a>
-  </nav>
-  <!-- End Navigation -->
+    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+<!--Nav Bar End-->
 <body>
-  <center>
-    <div class = "contactCard">
-    <h1>Reach Me at:</h1>
-    <p class="contact-info">Email: johnhoang5@gmail.com</p>
-    <p class="contact-info">Phone: (408) 497-8082 </p>
-    <a href="https://github.com/jawnhoang" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="https://www.linkedin.com/in/jawnhoang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <div class="row">
+        <div class="column">
+            <br>
+        </div>
+        <div class="column">
+             <div class = "contactCard">
+                 <center>
+              <h1>Reach Me at:</h1>
+            <p class="contact-info">Email: johnhoang5@gmail.com</p>
+            <p class="contact-info">Phone: (408) 497-8082 </p>
+            <a href="https://github.com/jawnhoang" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/jawnhoang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    
+    </center> 
+   </div>
     </div>
-    </center>
+    </div>
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

@@ -1,78 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/main.css">
-  <title>My Coding Journey</title>
-</head>
- <!-- Navigation -->
- <nav class="HoangNav">
-    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "css/project.css">
+        <link rel="stylesheet" href = "css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+<!--Nav Bar Begin-->
+<div class="topNav" id = "myTopNav">
+    <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
     <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
-    <a href="#home" onclick = "home();" class="HoangNavItem">About Me</a>
-  </nav>
-  <!-- End Navigation -->
-
+    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+<!--Nav Bar End-->
 <body>
-  <center>
-  <!-- row one-->
-  
-   <div class="card">
+    <!--row one-->
+    <div class="row">
+        <div class="column">
+            <br>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="images/Archer/ArcherHP.png" style="max-width: 100%;">
+                <div class ="container">
+                  <h2>Archer</b></h2>
+                  <p>Social Media Alternative</p>
+                  <a onclick = "archerproj();" class = "archerProjBtn"><button type="button">View Project</button></a>
+                </div>
+            
+              </div>
+        </div>
+        <div class="column">
+            <div class = "textCard" style = "max-width:100%;">
+                <center>
+                    <h4 class = "projTitle">Archer</h4>
+                </center>
+                    <p class = "projDesc">Meet new people within your major or with those who share the same interests!</p>
+                    <p class = "projDesc">Technologies used:
+                    <li class = "bullet">Python 3</li>
+                    <li class = "bullet">Flask</li>
+                    <li class = "bullet">HTML(Bootstrap), CSS</li>
+                    <li class = "bullet">SQLAlchemy</li>
+                    </p>
+            </div>
+        </div>
+      </div>
+      <!--row one end-->
 
-    <img class="cardImg" src="images/Archer/ArcherHP.png" style="max-width: 100%;">
-    <div class ="container">
-      <h2>Archer</b></h2>
-      <p>Social Media Website</p>
-      <a href="#about" onclick = "archerproj();" class = "archerProjBtn"><button type="button">View Project</button></a>
-    </div>
+      <!--row two-->
+      <div class="row">
+        <div class="column">
+            <br>
+        </div>
+        <div class="column">
+            <div class = "card">
+                <img src="images/JINA/JinaMenu.png" style="max-width: 100%;">
+                <div class = "container">
+                  <h3>JINA STUDIOS</b></h3>
+                  <p>Arcade Platform</p>
+                  <a onclick = "jinaproj();" class="jinaProjBtn"><button type="button">View Project</button></a> 
+                </div>
+        </div>
+        </div>
+        <div class="column">
+            <div class = "textCard" style = "max-width:100%;">
+                <center>
+                    <h5 class ="projTitle">JINA STUDIOS</h5>
+                    </center>
+                    <p class = "projDesc">On the go arcade platform where users have a choice of playing BlockBreaker, Pong, Snake, or Tetris!</p>
+                    <li class = "bullet">Java 8</li>
+                    <li class = "bullet">JavaFX, FXML</li>
+                  </p>
+            </div>
+        </div>
+      </div>
 
-  </div>
-</center>
-
-
-  <div class = "textCard" style="width: 300px;">
-    <center>
-  <h4 class = "projTitle">Archer</h4>
-  </center>
-  <p class = "projDesc">Meet new people within your major or with those who share the same interests!</p>
-  <p class = "projDesc">Technologies used:
-  <li class = "bullet">Python 3</li>
-  <li class = "bullet">Flask</li>
-  <li class = "bullet">HTML(Bootstrap), CSS</li>
-  <li class = "bullet">SQLAlchemy</li>
-  </p>
-
-  </div>
-  
-
-  <!--row two-->
-  <center>
-  <div class = "card">
-    <img class="cardImg" src="images/JINA/JinaMenu.png" style="width: 100%;">
-    <div class = "container">
-      <h3>JINA STUDIOS</b></h3>
-      <p>Arcade Platform</p>
-      <a onclick = "jinaproj();" class="jinaProjBtn"><button type="button">View Project</button></a> 
-    </div>
-  </div>
-  </center>
-  <div class = "textCard" style="width: 300px;">
-    <center>
-    <h5 class ="projTitle">JINA STUDIOS</h5>
-    </center>
-    <p class = "projDesc">On the go arcade platform where users have a choice of playing BlockBreaker, Pong, Snake, or Tetris!</p>
-    <li class = "bullet">Java 8</li>
-    <li class = "bullet">JavaFX, FXML</li>
-  </p>
-  </div>
-  
+      <!--row two end-->
 
 
-       
-    
+
+
 </body>
+
+
+
 </html>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <noscript>Enable JavaScript for full site activity.</noscript>

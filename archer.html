@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/archer.css">
-  <title>My Coding Journey</title>
-</head>
-<!-- Navigation -->
-<nav class="HoangNav">
-  <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
-  <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
-  <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
-</nav>
- <!--End Navigation -->
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "css/archer.css">
+        <link rel="stylesheet" href = "css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+<!--Nav Bar Begin-->
+<div class="topNav" id = "myTopNav">
+    <a href="#home" onclick ="home();" class="HoangNavItem">About Me</a>
+    <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
+    <a href="#aboutMe" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+<!--Nav Bar End-->
 
 <body>
  <!-- Slideshow container -->
@@ -90,12 +96,41 @@
   <span class="dot" onclick="currentSlide(8)"></span>
   <span class="dot" onclick="currentSlide(9)"></span>
 </div>
+<div class="row">
+    <div class="column">
+        <br>
+    </div>
+    <div class="column">
+<div class= "SummaryCard">
+    <div class = "container">
+      <center>
+        <h2>Project Summary</h2>
+      </center>
+      <p class = "para"> Archer was developed through a team of 4. We used Python, Flask, SQLAlchemy to create our website.
+          The purpose of this website is to match you with other people who share either the same academic major, or a similar 
+          activity you both are interested in. 
+      </p>
+      <p class = "para"> To achieve the match making, we simply had the user fill out a survey upon registering and the backend does a quiery 
+          through the database to find other accounts with matching survey data.
+      </p>
+      <p class = "para"> This project taught me the basics of:
+          <li class = "bullet">Object Relational Mapping with SQLAlchemy</li>
+          <li class = "bullet">How to create a website through Flask-Python</li>
+          <li class = "bullet">HTML, CSS</li>
+          <li class = "bullet">Exposure to Agile and Scrum methodologies</li>
+      </p>
+      <a href="https://github.com/jawnhoang/Archer" target="_blank" rel="noopener noreferrer">Here's the repo!</a>
+  
+    </div>
+  </div>
+  </div>
+</div>
+<div class="deliverables">
   <center>
   <h1>Deliverables</h1>
     <embed src="deliverables/archer/Archer SDLC.pdf#toolbar=0" width="50%" height="900px" type="application/pdf">
     </center>
-
-
+</div>
 
 
 

@@ -1,0 +1,75 @@
+
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 5%;
+    border-radius: 7px;
+    width:auto;
+    float:left;
+
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 0 2%;
+    border-radius: 7px;
+    font-family: roboto;
+    margin-bottom: 1%;
+  }
+   
+
+  .textCard{
+    /* Add shadows to create the "card" effect */
+    padding: 1%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 5%;
+    width:auto;
+    display: flexbox;
+    border-width: 5%;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+
+  .column {
+    float:left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  h4{
+      font-size: larger;
+  }
+
+  .archerProjBtn, .jinaProjBtn{
+    float:right;
+    margin-bottom: 5px;
+    border-radius: 5%;
+     
+  }
